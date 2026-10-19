@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="AXEN — symbol-on-navy"><title>AXEN — symbol-on-navy</title><defs xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <linearGradient id="axen-ink" x1="0" y1="0" x2="0.75" y2="1"><stop offset="0" stop-color="#FFFFFF" /><stop offset="1" stop-color="#FFFFFF" /></linearGradient>
+  <linearGradient id="axen-cyan" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#00B4B4" /><stop offset="1" stop-color="#00C5C8" /></linearGradient>
+  
+  <g id="axen-symbol" transform="scale(1.92 2.25)">
+    
+    <path d="M4.1 15.3 H20.5 Q25.3 15.3 28.9 19.2 L53.6 45 H30.1 Z" fill="url(#axen-ink)" />
+    
+    <path d="M56.2 49.2 L79.2 76.3 H61.3 Q57.2 76.3 54 73.5 L44.8 60.1 Z" fill="url(#axen-ink)" />
+    
+    <path d="M45.0 29.3 L65.7 5.1 Q69.5 0.0 76.0 0.0 H95.0 L55.6 42.0 Z" fill="url(#axen-cyan)" />
+    
+    <path d="M0.0 80.0 L29.0 44.9 H53.6 L32.3 70.7 Q25.8 80 20.8 80 Z" fill="url(#axen-cyan)" />
+    
+    <path d="M30.1 45 L41.3 32.5 L53.6 45 Z" fill="#006078" opacity="0.77" />
+    <path d="M30.1 45 H53.6 L41.8 58.0 Z" fill="#008DA0" opacity="0.57" />
+  </g>
+  
+  <g id="axen-wordmark" transform="scale(2.45)">
+    <g transform="translate(-10 -8)">
+      
+      <path fill-rule="evenodd" d="M10.0 84.4 L40.6 26.4 Q42.0 23.4 45.2 23.4 H58.0 Q61.8 23.4 63.2 27.0 L88.3 75.2 L80.3 84.4 H74.1 L67.0 72.5 H35.1 L28.3 84.4 Z M52.1 39.6 L41.3 59.6 H62.0 Z" fill="url(#axen-ink)" />
+      <use xlink:href="#axen-symbol" transform="translate(82 8) scale(0.520833333333 0.444444444444)" />
+      
+      <path d="M180.4 23.5 H223.8 V36.3 H187.7 Q183.1 36.3 183.1 41.0 V47.0 H216.7 V59.4 H183.1 V67.8 Q183.1 71.4 187.1 71.4 H223.8 V84.4 H180.8 Q166.9 84.4 166.9 71.3 V36.9 Q166.9 23.5 180.4 23.5 Z" fill="url(#axen-ink)" />
+      
+      <path d="M231.5 84.4 V23.5 H245.7 L281.2 60.7 V23.5 H296.5 V84.4 H281.4 L247.0 47.7 V84.4 Z" fill="url(#axen-ink)" />
+    </g>
+  </g>
+</defs>
+<rect x="0" y="0" width="512" height="512" rx="0" fill="#10263D" /><g transform="translate(70 72) scale(2.03)"><use xlink:href="#axen-symbol"/></g></svg>

@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="770" height="680" viewBox="0 0 770 680" role="img" aria-labelledby="art-title art-desc">
+ <title id="art-title">Illustration d'un photocopieur multifonction professionnel</title>
+ <desc id="art-desc">Photocopieur moderne blanc et bleu nuit avec écran de commande, scanner, tiroirs à papier et documents.</desc>
+ <defs>
+  <linearGradient id="body" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF"/><stop offset="0.66" stop-color="#EDF5F9"/><stop offset="1" stop-color="#BFCFD8"/></linearGradient>
+  <linearGradient id="top" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FEFFFF"/><stop offset="1" stop-color="#C6D7E2"/></linearGradient>
+  <linearGradient id="side" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#89A3B5"/><stop offset="1" stop-color="#425A6F"/></linearGradient>
+  <linearGradient id="shade" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#1F455F"/><stop offset="1" stop-color="#071C2F"/></linearGradient>
+  <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#2BE4D8"/><stop offset="1" stop-color="#097F9B"/></linearGradient>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%"><feGaussianBlur stdDeviation="22"/></filter>
+ </defs>
+ <!-- Ambient office graphic -->
+ <circle cx="404" cy="324" r="251" fill="#FFFFFF" opacity=".065"/>
+ <circle cx="402" cy="324" r="196" fill="none" stroke="#65DCD8" opacity=".18" stroke-width="1.5"/>
+ <path d="M90 512H685M115 534H663" stroke="#3BA5AE" stroke-opacity=".19" stroke-width="1.5"/>
+ <path d="M102 200V123H194M580 105H666V193M100 385V453H166" fill="none" stroke="#48C2C6" stroke-opacity=".35" stroke-width="2" stroke-dasharray="5 9"/>
+ <circle cx="666" cy="193" r="4" fill="#48C2C6" opacity=".7"/><circle cx="194" cy="123" r="4" fill="#48C2C6" opacity=".7"/>
+ <ellipse cx="403" cy="579" rx="276" ry="43" fill="#021321" opacity=".50" filter="url(#shadow)"/>
+ <!-- paper exiting -->
+ <g transform="rotate(-10 463 154)">
+  <path d="M365 44H548V236H365Z" fill="#D7EEF1" opacity=".23"/>
+  <path d="M345 25H530V216H345Z" fill="#FCFFFF" stroke="#B3D7DD" stroke-width="2"/>
+  <path d="M380 68H496" stroke="#AEC8D7" stroke-width="7" stroke-linecap="round"/>
+  <path d="M380 96H490M380 122H472M380 148H501" stroke="#D1DFE7" stroke-width="6" stroke-linecap="round"/>
+  <path d="M379 176H432" stroke="#00B7BC" stroke-width="9" stroke-linecap="round"/>
+ </g>
+ <!-- machine dark back -->
+ <path d="M198 224L494 182L605 224V542L514 575H190L165 526V253Z" fill="url(#shade)" stroke="#153851" stroke-width="3"/>
+ <!-- side panel -->
+ <path d="M514 256L605 224V542L514 575Z" fill="url(#side)"/>
+ <path d="M529 283L591 261V518L529 542Z" fill="#718DA2" opacity=".45"/>
+ <path d="M547 315L576 305M547 338L576 328" stroke="#B1C2CC" stroke-width="4" opacity=".55"/>
+ <!-- scanner lid -->
+ <path d="M194 171L492 137L567 174L273 215Z" fill="#526E7E" stroke="#0C314C" stroke-width="7"/>
+ <path d="M209 157L475 126L544 159L282 196Z" fill="url(#top)" stroke="#D8E6EC" stroke-width="3"/>
+ <path d="M209 157L282 196V215L194 171Z" fill="#67889B"/>
+ <path d="M282 196L544 159L567 174L273 215Z" fill="#BDD1DC"/>
+ <!-- reader glass -->
+ <path d="M260 158L461 136L496 157L298 181Z" fill="#214D65" opacity=".82"/>
+ <path d="M282 156L453 139L478 152L305 175Z" fill="#3B778E" opacity=".7"/>
+ <!-- bridge -->
+ <path d="M189 207L513 211V260L184 258Z" fill="#D1E0E7"/>
+ <path d="M189 207L493 191L566 221L513 255L184 258Z" fill="url(#body)" stroke="#C5D6DF" stroke-width="3"/>
+ <path d="M188 253L512 256V302L186 299Z" fill="#C4D4DE"/>
+ <!-- screen arm -->
+ <path d="M510 215L536 201L547 224L525 237Z" fill="#243C50"/>
+ <path d="M470 168L577 160L609 179L501 192Z" fill="#142E43"/>
+ <path d="M478 157L572 149Q580 149 585 154L605 174L500 187L475 167Q470 160 478 157Z" fill="#263F53" stroke="#7796AA" stroke-width="3"/>
+ <path d="M489 160L566 154L588 173L506 181Z" fill="url(#screen)"/>
+ <path d="M510 167L541 165M510 173L557 170" stroke="#D3FCF3" stroke-width="3" stroke-linecap="round" opacity=".84"/>
+ <circle cx="574" cy="170" r="3" fill="#DAFFFB"/>
+ <!-- printer front panel -->
+ <path d="M190 295L515 298V549L191 549Q179 549 179 537V309Q179 296 190 295Z" fill="url(#body)" stroke="#ADC2D1" stroke-width="3"/>
+ <!-- inner teal accent line -->
+ <path d="M195 299H514" stroke="#04B8B7" stroke-width="9"/>
+ <!-- output tray -->
+ <path d="M222 332H488V381H222Z" fill="#718B9D"/>
+ <path d="M236 344H476V362H236Z" fill="#102B40"/>
+ <path d="M248 357H467L488 383H228Z" fill="#E8F1F4" stroke="#BACBD4" stroke-width="2"/>
+ <!-- paper in tray -->
+ <path d="M280 346H434L453 357H263Z" fill="#FEFFFF" stroke="#D9E3E9" stroke-width="1"/>
+ <!-- drawers -->
+ <g>
+  <path d="M214 397H485V451H214Z" fill="#F9FCFD" stroke="#AFC4CF" stroke-width="2"/>
+  <path d="M214 459H485V514H214Z" fill="#F3F8FA" stroke="#AFC4CF" stroke-width="2"/>
+  <path d="M314 408H385V420H314Z M314 470H385V482H314Z" fill="#91A6B3"/>
+  <path d="M321 408H378V411H321Z M321 470H378V473H321Z" fill="#F9FFFF" opacity=".65"/>
+ </g>
+ <!-- legs -->
+ <path d="M198 550H235V568H198ZM449 550H488V568H449Z" fill="#112F44"/>
+ <!-- light/reflections -->
+ <path d="M194 311V521" stroke="#FFFFFF" stroke-width="3" opacity=".65"/>
+ <path d="M520 268V534" stroke="#D4E5EA" stroke-width="2" opacity=".6"/>
+ <!-- reflection dot -->
+ <circle cx="477" cy="285" r="5" fill="#04B9BD"/>
+ <path d="M226 280H285" stroke="#8BAABB" stroke-width="5" stroke-linecap="round"/>
+</svg>
