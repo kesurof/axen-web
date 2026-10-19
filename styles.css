@@ -251,3 +251,19 @@
   .intro-section .value-item { transition: none; }
   .intro-section .value-item:hover { transform: none; }
 }
+
+
+/* AXEN services — cartes éditoriales, v2 (scoped redesign) */
+.services-section .service-list{display:grid;gap:15px;min-width:0;border:0}
+.services-section .service-row{position:relative;display:grid;grid-template-columns:54px minmax(0,1fr) 46px;align-items:center;gap:20px;min-height:132px;padding:22px 25px;overflow:hidden;background:linear-gradient(112deg,#fff 0%,#fff 70%,#f5fbfa 100%);border:1px solid #dce9ed;border-radius:15px;box-shadow:0 7px 22px rgba(16,38,61,.04);transition:border-color .22s ease,box-shadow .22s ease}
+.services-section .service-row::before{content:'';position:absolute;left:0;top:17px;bottom:17px;width:3px;border-radius:0 4px 4px 0;background:linear-gradient(#00babb,#65e5dd)}
+.services-section .service-row-number{display:grid;place-items:center;width:54px;height:54px;padding:0;background:#e7f8f6;border:1px solid #ceeeec;border-radius:13px;color:#007f89;font-family:var(--heading);font-size:18px;font-weight:750;letter-spacing:-.02em;line-height:1}
+.services-section .service-row h3{margin:0 0 8px;color:var(--navy);font-family:var(--heading);font-size:clamp(18px,1.6vw,21px);font-weight:750;line-height:1.3;letter-spacing:-.035em}
+.services-section .service-row p{max-width:49ch;margin:0;color:#526f81;font-size:13px;line-height:1.7}
+.services-section .service-row-icon{display:grid;place-items:center;justify-self:end;width:46px;height:46px;flex:none;background:#e8f8f6;border:1px solid #d8eeed;border-radius:50%;color:#008e9b;font-size:0}
+.services-section .service-row-icon svg{width:24px;height:24px;display:block;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+@media(hover:hover) and (pointer:fine){.services-section .service-row:hover{border-color:#a1d6d5;box-shadow:0 12px 30px rgba(16,38,61,.08)}}
+@media(max-width:1160px){.services-section .service-row{grid-template-columns:48px minmax(0,1fr) 40px;gap:15px;padding:21px}.services-section .service-row-number{width:48px;height:48px}.services-section .service-row-icon{width:40px;height:40px}.services-section .service-row-icon svg{width:22px;height:22px}}
+@media(max-width:640px){.services-section .service-list{gap:12px}.services-section .service-row{grid-template-columns:43px minmax(0,1fr) 35px;gap:12px;min-height:112px;padding:18px 14px;border-radius:12px}.services-section .service-row-number{width:43px;height:43px;font-size:15px;border-radius:10px}.services-section .service-row-icon{width:35px;height:35px}.services-section .service-row-icon svg{width:19px;height:19px}.services-section .service-row h3{font-size:17px;margin-bottom:6px}.services-section .service-row p{font-size:12px;line-height:1.65}}
+@media(max-width:390px){.services-section .service-row{grid-template-columns:40px minmax(0,1fr);gap:10px}.services-section .service-row-number{width:40px;height:40px}.services-section .service-row-icon{display:none}}
+@media(prefers-reduced-motion:reduce){.services-section .service-row{transition:none}}
