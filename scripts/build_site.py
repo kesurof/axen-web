@@ -14,7 +14,7 @@ for name in ('index.html', 'mentions-legales.html', 'confidentialite.html', 'sty
              'manifest.webmanifest', 'robots.txt', 'sitemap.xml', 'credits-photos.html', '.nojekyll'):
     shutil.copy2(ROOT / name, DIST / name)
 shutil.copytree(ROOT / 'assets', DIST / 'assets')
-for photo in ('canon-imagerunner-c7570i.webp', 'xerox-altalink-c8045.webp'):
+for photo in ('copier-hero-office.webp', 'copier-feature-studio.webp'):
     path = DIST / 'assets' / 'photos' / photo
     assert path.is_file() and path.stat().st_size > 10_000, f'Photo missing or invalid: {path}'
 shutil.copytree(ROOT / 'solutions', DIST / 'solutions')

@@ -269,8 +269,7 @@
 @media(prefers-reduced-motion:reduce){.services-section .service-row{transition:none}}
 
 
-/* AXEN · Real photographs of professional machines, CC BY 4.0.
-   Source, copyright and image adaptation: credits-photos.html */
+/* AXEN · Studio-inspired demonstration visual assets (not official manufacturer photographs). */
 .hero-visual-frame--photography {
   inset: 22px 2px 36px 2px;
   overflow: hidden;
@@ -344,3 +343,69 @@
   .featured-art--photo { height: 215px; margin-top: 18px; margin-bottom: 28px; }
   .featured-photo-label { font-size: 8px; }
 }
+
+
+/* AXEN — Mise à jour démonstration & visuels premium */
+body::after{
+  content:"SITE DE DÉMONSTRATION";
+  position:fixed; z-index:110; right:max(15px,env(safe-area-inset-right));
+  bottom:max(15px,env(safe-area-inset-bottom)); pointer-events:none;
+  padding:9px 12px; border:1px solid rgba(47,174,180,.3);
+  border-radius:100px; background:rgba(9,37,56,.88); color:#ecffff;
+  box-shadow:0 5px 25px rgba(0,0,0,.13);
+  backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px);
+  font:800 10px/1.2 var(--body); letter-spacing:.14em;
+}
+.hero-visual-frame--photography{
+  background:#edf3f5; border-color:rgba(183,222,226,.4);
+  box-shadow:0 23px 55px rgba(0,10,25,.18);
+}
+.hero-visual-frame--photography::after{
+  background:linear-gradient(145deg,rgba(255,255,255,.11),transparent 45%,rgba(8,31,48,.08));
+}
+.hero-machine--photo{
+  object-position:center center; filter:none;
+}
+.featured-art--photo{
+  height:272px; margin-top:21px; margin-bottom:29px;
+  border-radius:14px; border:1px solid rgba(219,232,232,.23);
+  background:#f2f5f7; box-shadow:0 18px 38px rgba(0,8,18,.16);
+}
+.featured-machine-photo{
+  object-position:center center; filter:none;
+}
+.featured-photo-label{bottom:13px;left:13px;letter-spacing:.11em}
+.reviews-section .section-head{margin-bottom:25px}
+.reviews-disclaimer{
+  display:inline-flex;align-items:center;gap:9px;max-width:850px;
+  margin:0 0 24px;padding:11px 16px;border-radius:9px;
+  border:1px solid #b8dedb;background:#e9f7f5;color:#165f6a;
+  font-size:12px;font-weight:650;line-height:1.6
+}
+.reviews-disclaimer span{font-size:17px;color:#008f98}
+.reviews-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.review-card{
+  background:#fff;border:1px solid #dfe9ee;border-radius:16px;
+  box-shadow:0 10px 32px rgba(20,65,83,.045);
+  padding:29px 26px;min-height:292px;display:flex;flex-direction:column;
+  transition:border-color .2s ease, box-shadow .2s ease;
+}
+.review-card-top{display:flex;align-items:center;justify-content:space-between;gap:9px;margin-bottom:22px}
+.review-card-top>span{color:#cf8b22;font-size:17px;letter-spacing:.11em}
+.review-card-top small{font-weight:800;letter-spacing:.08em;font-size:9px;color:#567782;background:#e9f5f5;padding:6px 8px;border-radius:4px}
+.review-card blockquote{padding:0;margin:0 0 27px;color:#28475a;font-size:14px;line-height:1.83;flex:1}
+.review-author{border-top:1px solid #e6edef;padding-top:16px;display:flex;flex-direction:column;gap:5px}
+.review-author strong{color:#10263d;font-family:var(--heading);font-size:14px;letter-spacing:-.02em}
+.review-author span{color:#687f8d;font-size:11px;line-height:1.6}
+@media (hover:hover) and (pointer:fine){
+  .review-card:hover{border-color:#b7dfdb;box-shadow:0 13px 34px rgba(20,65,83,.075)}
+}
+@media(max-width:920px){.reviews-grid{grid-template-columns:1fr;gap:13px}.review-card{min-height:0}}
+@media(max-width:640px){
+  body::after{right:10px;bottom:10px;font-size:8px;padding:7px 10px}
+  .hero-visual-frame--photography{inset:8px 8px 30px}
+  .featured-art--photo{height:230px;margin-top:18px;margin-bottom:26px}
+  .reviews-disclaimer{font-size:11px;align-items:flex-start}
+  .review-card{padding:22px 20px}.review-card blockquote{font-size:13px;line-height:1.7}
+}
+@media(prefers-reduced-motion:reduce){.review-card{transition:none}}

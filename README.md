@@ -75,12 +75,10 @@ Chaque carte **En savoir plus** de la page d'accueil ouvre désormais sa vérita
 Le script `scripts/check_site.py` contrôle aussi les liens entre pages et les fragments d'ancrage. Le script `scripts/build_site.py` copie le dossier `solutions/` dans `dist/` pour GitHub Pages.
 
 
-## Photographies réelles des équipements
+## Site de démonstration (octobre 2026)
 
-Deux visuels des machines **Canon imageRUNNER C7570i** et **Xerox AltaLink C8045** remplacent les illustrations de la zone d'accueil et de la carte phare des solutions. Les autres illustrations originales restent disponibles. Les appareils sont présentés uniquement à titre d'exemple, sans revendiquer de partenariat commercial avec Canon ou Xerox.
+AXEN est utilisé ici pour un **cas d'étude fictif**. Tous les avis sont inventés : la rubrique porte la mention « Avis fictifs » et chaque carte est marquée « EXEMPLE FICTIF ». Un badge discret « SITE DE DÉMONSTRATION » reste affiché sur toutes les pages, et la mention figure en pied de page.
 
-Les photos proviennent de Wikimedia Commons, licence **CC BY 4.0** avec auteur **Baron Maddock**. Voir `credits-photos.html` pour les liens de provenance et les conditions complètes.
+Deux illustrations premium au format WebP remplacent les anciennes photos sombres : `assets/photos/copier-hero-office.webp` (mise en situation) et `assets/photos/copier-feature-studio.webp` (vue studio). Les visuels ont été générés pour la maquette. Ils ne sont **pas des photographies officielles**, ne prouvent aucun partenariat fournisseur et ne présentent pas des modèles contractuels. Voir `credits-photos.html`.
 
-- `scripts/fetch_photos.py` télécharge les originaux et produit des fichiers WebP optimisés.
-- Le workflow GitHub Pages met à disposition les images sous `assets/photos/`, et les conserve dans le dépôt pour garantir un hébergement local sans hotlinking.
-- La source GitHub de branding et le reste du site ne sont pas affectés.
+Les pages restent hébergées localement dans GitHub Pages, sans téléchargement d'images externes lors du build. Une future utilisation commerciale impose de retirer les avis fictifs et de valider les mentions légales et les visuels.
