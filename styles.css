@@ -115,3 +115,139 @@
   .detail-next{padding:66px 0}.detail-next-heading{align-items:flex-start;flex-direction:column;gap:8px}
   .detail-cta{padding:65px 0}.detail-criteria h2,.detail-faq h2,.detail-overview h2{font-size:clamp(34px,9vw,45px)}
 }
+
+
+/* AXEN — Values / cartes identitaires v2
+   Scope limité au triptyque « Justesse / Clarté / Continuité ». */
+.intro-section .values-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 18px;
+  margin-top: 72px;
+  border: 0;
+}
+
+.intro-section .value-item,
+.intro-section .value-item + .value-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 250px;
+  padding: 30px 28px 29px;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #dfe9eb;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(16, 38, 61, .045);
+  transition: transform .22s var(--ease), box-shadow .22s ease, border-color .22s ease;
+}
+
+.intro-section .value-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #00babb, #65e5dd);
+}
+
+.intro-section .value-index {
+  display: inline-block;
+  margin: 0 0 20px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .16em;
+  color: #7f9cac;
+}
+
+.intro-section .value-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: 56px;
+  height: 56px;
+  margin-bottom: 19px;
+  color: #008f9a;
+  background: linear-gradient(145deg, #f1fcfa 0%, #e0f5f2 100%);
+  border: 1px solid rgba(0, 157, 163, .12);
+  border-radius: 14px;
+}
+
+.intro-section .value-icon svg {
+  width: 30px;
+  height: 30px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.intro-section .value-item h3 {
+  margin: 0 0 12px;
+  color: var(--navy);
+  font-family: var(--heading);
+  font-size: clamp(22px, 2vw, 26px);
+  font-weight: 750;
+  line-height: 1.2;
+  letter-spacing: -.04em;
+}
+
+.intro-section .value-item h3::after {
+  content: '';
+  display: block;
+  width: 39px;
+  height: 3px;
+  margin-top: 13px;
+  border-radius: 999px;
+  background: #00babb;
+}
+
+.intro-section .value-item p {
+  max-width: 34ch;
+  margin: 0;
+  color: #526f80;
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .intro-section .value-item:hover {
+    transform: translateY(-4px);
+    border-color: #a7d9d8;
+    box-shadow: 0 18px 36px rgba(16, 38, 61, .1);
+  }
+}
+
+@media (max-width: 1040px) {
+  .intro-section .values-row { gap: 14px; margin-top: 56px; }
+  .intro-section .value-item,
+  .intro-section .value-item + .value-item { padding: 24px 22px; min-height: 230px; }
+}
+
+@media (max-width: 760px) {
+  .intro-section .values-row {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    margin-top: 42px;
+  }
+  .intro-section .value-item,
+  .intro-section .value-item + .value-item {
+    min-height: 0;
+    padding: 23px 22px 24px;
+    border: 1px solid #dfe9eb;
+  }
+  .intro-section .value-index { margin-bottom: 14px; }
+  .intro-section .value-icon { margin-bottom: 15px; }
+  .intro-section .value-item h3 { font-size: 23px; }
+  .intro-section .value-item p { max-width: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .intro-section .value-item { transition: none; }
+  .intro-section .value-item:hover { transform: none; }
+}
