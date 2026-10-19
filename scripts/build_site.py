@@ -14,6 +14,7 @@ for name in ('index.html', 'mentions-legales.html', 'confidentialite.html', 'sty
              'manifest.webmanifest', 'robots.txt', 'sitemap.xml', '.nojekyll'):
     shutil.copy2(ROOT / name, DIST / name)
 shutil.copytree(ROOT / 'assets', DIST / 'assets')
+shutil.copytree(ROOT / 'solutions', DIST / 'solutions')
 for svg in DIST.rglob('*.svg'):
     ET.parse(svg)
 icon = DIST / 'assets/brand/symbol-on-navy.svg'

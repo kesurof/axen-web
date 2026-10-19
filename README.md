@@ -61,3 +61,15 @@ Aucun traceur, SDK publicitaire, base de données ni traitement serveur. Le form
 ## Maintenance
 
 Le site a été conçu en HTML/CSS/JS natifs. Les chemins d'assets sont relatifs pour fonctionner sur le sous-chemin `/axen-web/`. Vérifier la version mobile et les liens avant toute mise à jour majeure.
+
+
+## Pages détaillées des solutions
+
+Chaque carte **En savoir plus** de la page d'accueil ouvre désormais sa véritable fiche (textes sur les usages, fonctionnalités, critères de choix et questions courantes). Ce contenu est statique, lisible sans JavaScript et inclus dans le sitemap :
+
+- `solutions/photocopieurs-multifonctions.html`
+- `solutions/imprimantes-professionnelles.html`
+- `solutions/numerisation-documents.html`
+- `solutions/gestion-parc-impression.html`
+
+Le script `scripts/check_site.py` contrôle aussi les liens entre pages et les fragments d'ancrage. Le script `scripts/build_site.py` copie le dossier `solutions/` dans `dist/` pour GitHub Pages.
