@@ -267,3 +267,80 @@
 @media(max-width:640px){.services-section .service-list{gap:12px}.services-section .service-row{grid-template-columns:43px minmax(0,1fr) 35px;gap:12px;min-height:112px;padding:18px 14px;border-radius:12px}.services-section .service-row-number{width:43px;height:43px;font-size:15px;border-radius:10px}.services-section .service-row-icon{width:35px;height:35px}.services-section .service-row-icon svg{width:19px;height:19px}.services-section .service-row h3{font-size:17px;margin-bottom:6px}.services-section .service-row p{font-size:12px;line-height:1.65}}
 @media(max-width:390px){.services-section .service-row{grid-template-columns:40px minmax(0,1fr);gap:10px}.services-section .service-row-number{width:40px;height:40px}.services-section .service-row-icon{display:none}}
 @media(prefers-reduced-motion:reduce){.services-section .service-row{transition:none}}
+
+
+/* AXEN · Real photographs of professional machines, CC BY 4.0.
+   Source, copyright and image adaptation: credits-photos.html */
+.hero-visual-frame--photography {
+  inset: 22px 2px 36px 2px;
+  overflow: hidden;
+  border: 1px solid rgba(115,225,222,.28);
+  border-radius: 24px;
+  background: #1a3948;
+  box-shadow: 0 24px 55px rgba(0,9,20,.27);
+  isolation: isolate;
+}
+.hero-visual-frame--photography::after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  background: linear-gradient(145deg,rgba(0,49,65,.13),transparent 40%,rgba(0,21,36,.36));
+  pointer-events: none;
+}
+.hero-machine--photo {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  object-position: 54% center;
+  filter: saturate(.87) contrast(1.045);
+}
+.hero-visual:has(.hero-machine--photo) .floating-chip { z-index: 3; }
+.featured-art--photo {
+  position: relative;
+  width: 100%;
+  height: 258px;
+  margin-top: 24px;
+  margin-bottom: 35px;
+  display: block;
+  overflow: hidden;
+  border-radius: 13px;
+  border: 1px solid rgba(153,230,229,.25);
+  background: #dce9e9;
+}
+.featured-art--photo::before,
+.featured-art--photo::after { display: none; }
+.featured-machine-photo {
+  display: block;
+  height: 100%;
+  width: 100%;
+  max-width: none;
+  object-fit: cover;
+  object-position: center 42%;
+  filter: saturate(.87) contrast(1.025);
+}
+.featured-photo-label {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  z-index: 2;
+  padding: 8px 10px;
+  border-radius: 5px;
+  color: #f3ffff;
+  background: rgba(8,39,58,.88);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: .12em;
+  backdrop-filter: blur(5px);
+}
+@media(max-width:920px){
+  .hero-visual-frame--photography { inset: 20px 20px 25px; }
+}
+@media(max-width:640px){
+  .hero-visual-frame--photography { inset: 7px 8px 34px; border-radius: 16px; }
+  .featured-art--photo { height: 215px; margin-top: 18px; margin-bottom: 28px; }
+  .featured-photo-label { font-size: 8px; }
+}

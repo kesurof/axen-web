@@ -73,3 +73,14 @@ Chaque carte **En savoir plus** de la page d'accueil ouvre désormais sa vérita
 - `solutions/gestion-parc-impression.html`
 
 Le script `scripts/check_site.py` contrôle aussi les liens entre pages et les fragments d'ancrage. Le script `scripts/build_site.py` copie le dossier `solutions/` dans `dist/` pour GitHub Pages.
+
+
+## Photographies réelles des équipements
+
+Deux visuels des machines **Canon imageRUNNER C7570i** et **Xerox AltaLink C8045** remplacent les illustrations de la zone d'accueil et de la carte phare des solutions. Les autres illustrations originales restent disponibles. Les appareils sont présentés uniquement à titre d'exemple, sans revendiquer de partenariat commercial avec Canon ou Xerox.
+
+Les photos proviennent de Wikimedia Commons, licence **CC BY 4.0** avec auteur **Baron Maddock**. Voir `credits-photos.html` pour les liens de provenance et les conditions complètes.
+
+- `scripts/fetch_photos.py` télécharge les originaux et produit des fichiers WebP optimisés.
+- Le workflow GitHub Pages met à disposition les images sous `assets/photos/`, et les conserve dans le dépôt pour garantir un hébergement local sans hotlinking.
+- La source GitHub de branding et le reste du site ne sont pas affectés.
